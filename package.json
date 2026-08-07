@@ -1,0 +1,14 @@
+{
+    "name": "just-some-st-tools",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "description": "SillyTavern extension registering tabletop RPG function tools, plus a local harness for testing them outside SillyTavern.",
+    "scripts": {
+        "dev": "node devserver/server.js",
+        "test": "node --test tests/*.test.js"
+    },
+    "devDependencies": {
+        "express": "^5.1.0"
+    }
+}

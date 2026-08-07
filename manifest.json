@@ -1,0 +1,12 @@
+{
+    "display_name": "Just Some ST Tools",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "",
+    "author": "marcelb",
+    "version": "0.1.0",
+    "homePage": "https://github.com/adsci/just-some-st-tools",
+    "auto_update": true
+}

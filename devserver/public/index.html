@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>just-some-st-tools — harness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>just-some-st-tools</h1>
+        <div class="chatbar">
+            <label for="chat-select">Chat</label>
+            <select id="chat-select"></select>
+            <input id="chat-new" type="text" placeholder="new chat id" size="16">
+            <button id="chat-create">Open</button>
+            <button id="chat-reset" class="danger">Reset this chat</button>
+            <span id="save-count" class="muted"></span>
+        </div>
+    </header>
+
+    <main>
+        <nav id="tool-list" aria-label="Tools"></nav>
+
+        <section id="detail">
+            <p class="muted">Pick a tool on the left.</p>
+        </section>
+
+        <aside id="state-pane">
+            <div class="pane-head">
+                <h2>Persisted state</h2>
+                <div class="pane-controls">
+                    <select id="state-scope">
+                        <option value="tool">this tool</option>
+                        <option value="all">all metadata</option>
+                    </select>
+                    <button id="state-refresh">Refresh</button>
+                </div>
+            </div>
+            <div id="state-title" class="meta"></div>
+            <pre id="state-dump">{}</pre>
+        </aside>
+    </main>
+</body>
+<script type="module" src="app.js"></script>
+</html>
